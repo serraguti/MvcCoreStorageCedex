@@ -1,0 +1,10 @@
+﻿<h1>Upload Blob</h1>
+
+<form method="post" enctype="multipart/form-data">
+    <label>Seleccione un fichero</label>
+    <input type="file" name="file" class="form-control"/>
+    <input type="hidden" name="containername" value='@ViewData["CONTAINER"]'/>
+    <button class="btn btn-warning">
+        Upload File
+    </button>
+</form>
