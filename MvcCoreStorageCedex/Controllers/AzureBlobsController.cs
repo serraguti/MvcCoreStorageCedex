@@ -16,7 +16,7 @@ namespace MvcCoreStorageCedex.Controllers
         public async Task<IActionResult> ListContainers()
         {
             List<string> containers = await this.service.GetContainersAsync();
-            return View();
+            return View(containers);
         }
 
         public IActionResult CreateContainer()
